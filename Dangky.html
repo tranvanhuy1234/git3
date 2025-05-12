@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DangKy</title>
+    <style >
+        .formdk{
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        display: flex;
+        margin: auto;
+         width: 480px;
+         border-left: 1px solid rgb(98, 84, 84);
+         border-right: 8px solid ;
+         border-image: linear-gradient(to right, rgb(0, 0, 0), rgb(199, 199, 192)) 0.5;;
+
+        }
+        .formdk__table{
+            width: 470px;
+            height: 300px;
+            background-color: rgb(104, 235, 154);
+            border: 1px solid ;
+            margin-left: 4px;
+            margin-right: 4px;
+            
+        }
+        .header{
+            font-size: 18px;
+            color:rgb(104, 235, 154);
+        }
+        .formdk__infromation{
+            width: 40%;
+            text-align: left;
+            font-size: 17px;
+            color:rgb(28, 30, 31);
+           font-weight: 200;
+        }
+        .formdk__input{
+            border-color: #4c4b4b #999 #999 #4c4b4b;
+            box-shadow: 5px 5px 5px rgba(226, 225, 225, 0.6);
+            border-radius: 2px;
+            width: 70%;
+            padding: 0;
+            display: flex;
+            justify-content: flex-start;
+        }
+        .list{
+            list-style: none;
+            padding-left: 0;
+            width: 70%;
+            height: 100%;
+            margin: 0px;
+            
+        }
+        .list__produce{
+            background-color: aliceblue;
+            border: 1px;
+
+        }
+        .list__produce1{
+            background-color: blue;
+        }
+        .formdk__input__radio{
+            display: flex;
+            justify-content: flex-start;
+        }
+        .nam{
+            margin-right: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="formdk">
+        <table class="formdk__table" border="1px" style="border-collapse: collapse;"><caption> <h1 class="header">Phiếu đăng ký tham gia chương trình khuyến mãi</h1></caption>
+        <tbody>
+        
+            <tr class="formdk__table__row">
+                <th class="formdk__infromation"> Họ và tên</th>
+                <th>
+                    <input type="text" class="formdk__input">
+                </th>
+            </tr>
+            <tr  class="formdk__table__row">
+                <th  class="formdk__infromation" >Địa chỉ</th>
+                <th>
+                    <input type="text" class="formdk__input">
+                </th>
+            </tr>
+            <tr class="formdk__table__row">
+                <th  class="formdk__infromation">Điền thoại</th>
+                <th>
+                    <input type="number" class="formdk__input">
+                </th>
+            </tr>
+            <tr class="formdk__table__row">
+                <th  class="formdk__infromation">Phái</th>
+                <th class=" formdk__input__radio" >
+                    <input type="radio" name="gioitinh" id="nam">
+                    <label for="nam" class="nam"> Nam</label>
+                    <input type="radio" name="gioitinh" id="nu">
+                    <label for="nu"> Nữ</label>
+                </th>
+            </tr >
+            <tr class="formdk__table__row">
+                <th  class="formdk__infromation"> Nghề nghiệp</th>
+                <th>
+                    <input type="text" class="formdk__input">
+
+                </th>
+            </tr>
+            <tr class="formdk__table__row">
+                <th  class="formdk__infromation"> Chọn sản phẩm tham gia</th>
+                <th>
+                    <div>
+                        <ul class="list">
+                            <li class="list__produce list__produce1">Kem đánh răng</li>
+                            <li class="list__produce"> bột dặt</li>
+                            <li class="list__produce list__produce1">Dầu gội đầu</li>
+                            <li class="list__produce">Sữa tắm </li>
+                        </ul>
+                    </div>
+                </th>
+            </tr>
+            <tr class="formdk__table__row">
+                <th  class="formdk__infromation"> Số người dự đoán tham gia</th>
+                <th>
+                    <input type="number" class="formdk__input">
+                </th>
+            </tr>
+            <tr class="formdk__table__row">
+                <th colspan="2">
+                    <input type="submit" value="Đồng ý">
+                </th>
+            </tr>
+
+        </tbody>
+        </table>
+    </div>
+</body>
+</html>
